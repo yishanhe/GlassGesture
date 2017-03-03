@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.yishanhe.glassgesture" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+    <uses-feature android:name="android.hardware.sensor.gyroscope" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_welcome" >
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+        </activity>
+        <activity
+            android:name=".SensorLogger.SensorLoggerActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_sensor_logger" >
+        </activity>
+        <activity
+            android:name=".GestureLogger.GestureLoggerActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_gesture_logger" >
+        </activity>
+        <activity
+            android:name=".GestureRecognition.GestureRecognitionActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_gesture_recognition" >
+        </activity>
+        <activity
+            android:name=".GestureRecognition.MyDtwTestActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_dtw_test" >
+        </activity>
+        <activity
+            android:name=".GestureAuthentication.GestureAuthActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_gesture_auth" >
+        </activity>
+        <activity
+            android:name=".GestureAuthentication.LibSvmTestActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_lib_svm_test" >
+        </activity>
+        <activity
+            android:name=".ModelManagerActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_model_manager" >
+        </activity>
+        <activity
+            android:name=".ClassifierViewActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_classifier_view" >
+        </activity>
+    </application>
+
+</manifest>

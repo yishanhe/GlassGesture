@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GlassGesture</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="glass_voice_trigger">head gesture</string>
+    <string name="title_activity_sensor_logger">SensorLogger</string>
+    <string name="tap_for_menu">Tap for Menu</string>
+    <string name="title_activity_gesture_logger">GestureLogger</string>
+    <string name="ready">请准备</string>
+    <string name="act">请做动作</string>
+    <string name="end">已结束</string>
+    <string name="detected">检测到动作</string>
+    <string name="hold">请等待, 勿动</string>
+    <string name="title_activity_gesture_recognition">GestureRecognition</string>
+    <string name="title_activity_activity_training">ActivityTraining</string>
+    <string name="title_activity_dtw_test">DtwTest</string>
+    <string name="title_activity_lib_svm_test">LibSvmTest</string>
+    <string name="title_activity_gesture_auth">GestureAuthActivity</string>
+    <string name="title_activity_model_manager">ModelManager</string>
+    <string name="title_activity_classifier_view">ClassifierView</string>
+</resources>
